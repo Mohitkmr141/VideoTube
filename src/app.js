@@ -21,5 +21,7 @@ app.use(cors({
 app.use(cookieParser())
 app.use(express.static("public"))
 
+import { router } from './routes/user.route.js'
+app.use("/api/v1/user" , router)
 
 export {app}
