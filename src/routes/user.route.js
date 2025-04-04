@@ -3,6 +3,7 @@ const router = Router();
 import {
   logOut,
   loginUser,
+  refreshAccessToken,
   registerUser,
 } from "../controllers/user.controller.js";
 
@@ -20,4 +21,9 @@ router.route("/login").post(loginUser);
 // secured routes .
 // verifyJWT is a middleware
 router.route("/logOut").post(verifyJWT, logOut);
+
+
+
+router.route("/refresh-token").post(refreshAccessToken)
 export { router };
+
