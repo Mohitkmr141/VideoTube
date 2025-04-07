@@ -1,5 +1,5 @@
 {
     "files.autoSave": "onFocusChange",
-    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontFamily": "Fira Code",
     "editor.wordWrap": "on"
 }
